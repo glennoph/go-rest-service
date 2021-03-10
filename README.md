@@ -57,3 +57,20 @@ springdoc.swagger-ui.operationsSorter=method
 
 ### swagger ui
 http://localhost:8080/swagger-ui-custom.html
+
+## Access Properties Values
+* add file to resources: [data.properties](src/main/resources/data.properties)
+* update the class that will access the properties [GreetingController.java](src/main/java/go/springboot/gorestservice/GreetingController.java)
+```properties
+@PropertySource("classpath:data.properties")
+...
+// data.properties data.name
+@Value("${data.name:defaultname}")
+private  String dataName ;
+
+// data.properties data.id
+@Value("${data.id:defaultid}")
+private  String dataId ;
+```
+* the variables dataName and dataId will get the properties values or default values.
+
