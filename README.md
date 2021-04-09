@@ -39,7 +39,7 @@ see [GreetingControllerTest.java](src/test/java/go/springboot/gorestservice/Gree
 * maven dependencies
 
 ```xml
-<openapi.version>1.5.5</openapi.version>
+<openapi.version>1.5.6</openapi.version>
 
 <dependency>
    <groupId>org.springdoc</groupId>
